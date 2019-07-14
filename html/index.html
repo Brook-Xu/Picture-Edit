@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+
+		<title>头像设置</title>
+
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/index.css">
+
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="../js/index.js"></script>
+	</head>
+  	<body>
+		<div class="container">
+			<div>
+				<p>请选择一张图片（支持jpg、jpeg、png、bmp格式）</p>
+				<input type="file" id="files">
+				<br>
+				<p id="remind">请选择文件</p>
+				<div class="editPart" id="editPart">
+					<div class="edit" id="edit" draggable="true"></div>
+					<img src="" id="originalImage">
+				</div>
+			</div>
+			<br>
+			<div id="preview">
+				<p>头像预览</p>
+				<canvas id="myCanvas"></canvas>
+				<br>
+			</div>
+			<div>
+				<button class="pri-button" id="confirm">确定</button>
+				<button class="pri-button" id="store">保存头像</button>
+			</div>
+		</div>
+  	</body>
+</html>
