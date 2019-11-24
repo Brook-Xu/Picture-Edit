@@ -40,7 +40,6 @@ window.onload = function () {
 function checkBrowser() {
 
     if (!FileReader) {
-        alert("请更换浏览器进行头像上传");
         return false;
     }else{
         return true;
